@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="bg-darkblack text-offwhite flex justify-center min-h-screen">
       <div className="w-full px-6 md:px-20 lg:px-40 py-10">
-      <Header />
+        <Header />
         <Navbar />
         <Hero />
         <About />
@@ -23,36 +23,44 @@ function App() {
 
 export default App
 
-function Hero(){
+function Hero() {
   return (
-    <div className="py-30">
-      <h1 className="text-6xl text-offwhite font-bold">
-        Hey, I'am Dipanwita
+    <div className="py-20">
+      <h1 className="text-[200px] text-offwhite text-roboto font-medium font-stretch-ultra-condensed text-center text-nowrap hover:underline hover:underline-offset-2 decoration-lime">
+        DIPANWITA BALA
       </h1>
+      <h2 className="text-[100px] text-offwhite text-roboto font-normal font-stretch-ultra-condensed text-center text-nowrap hover:underline hover:underline-offset-2 decoration-pink-500">FULLSTACK DEVELOPER</h2>
     </div>
   )
 }
 
 function About() {
   return (
-    <motion.div 
+    <motion.div
       id="about"
-      className="py-30 text-lg leading-8 max-w-full"
-      initial={{ opacity: 0, y: 50 }} 
-      animate={{ opacity: 1, y: 0 }} 
-      transition={{ duration: 0.6 }}
+      className="py-30 text-lg leading-8 max-w-full "
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
     >
-      <div className="flex items-center justify-between gap-20 text-offwhite/50">
-      <div className="relative rounded-full shadow-2xl shadow-offwhite/10">
-        <img src="/assets/photo1.png" className="object-cover w-full h-full" alt="Dipanwita Bala" />
-      </div>
-      <div className="w-[60%]">
-      <h2 className="text-4xl font-semibold text-lightturquoise mb-6">About Me</h2>
-      <p>
-        I’m Dipanwita Bala, a final-year B.Tech student in ECE with a passion for building sleek, scalable, and impactful web applications. From crafting full-stack MERN platforms to fine-tuning AI models for real-world use cases, I love turning ideas into products. <br /><br />
-        I thrive in both frontend and backend development, with projects like <strong>Mindly</strong> (a second-brain app) and a real-time <strong>Chat Room</strong> under my belt. My stack includes TypeScript, React, Node.js, MongoDB, Zod, and React Query, with a dash of UX obsession and clean design.
-      </p>
-      </div>
+      <div className="flex flex-col gap-20">
+        <h1 className="text-[100px] text-offwhite text-roboto font-normal font-stretch-ultra-condensed text-center text-nowrap hover:underline hover:underline-offset-2 decoration-lime  ">
+          ABOUT
+        </h1>
+        <div className="flex items-center justify-between gap-20 text-offwhite/50">
+          <div className="relative rounded-full shadow-2xl shadow-offwhite/10">
+            <img src="/assets/photo1.png" className="object-cover w-full h-full" alt="Dipanwita Bala" />
+          </div>
+          <div className="w-[70%]">
+            <p>
+              Hi, I’m Dipanwita. I'm a Software Developer. I craft pretty and functional web applications.  My stack includes TypeScript, Reactjs, Node.js, MongoDB with a dash of UX obsession and clean design. <br /><br />
+              I'm currently building <a className="underline decoration-2 text-pink-500" href="https://www.appmindly.live/" target="_blank">Mindly</a> - a web solution for unorganised and scattered imporatnt links. <br ></br>
+              I love to experiment with CSS designs sometimes. But I like backend more to be honest.
+              <br></br>
+              {/* I can not do without a cup of coffee. I enjoy painting, dancing and F.R.I.E.N.D.S.  */}
+            </p>
+          </div>
+        </div>
       </div>
     </motion.div>
   )
@@ -60,17 +68,14 @@ function About() {
 
 function Header() {
   return (
-    <motion.div 
+    <motion.div
       className="flex flex-col md:flex-row items-center gap-8"
-      initial={{ opacity: 0 }} 
-      animate={{ opacity: 1 }} 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <div className="flex items-center w-full fixed gap-60">
-        <h1 className="text-xl font-medium font-sans italic text-lightturquoise">dipanwita bala</h1>
-        {/* <div className="text-lightturquoise border border-lightturquoise rounded-4xl py-2 px-4 hover:bg-lightturquoise hover:text-darkblack transition">
-        Dipanwita Bala
-      </div> */}
+      <div className="flex items-center justify-between w-full fixed font-roboto">
+        <h1 className="text-xl font-medium font-sans italic text-lightturquoise">db</h1>
         <div className="flex items-center justify-end gap-4 ">
           <a href="https://github.com/Dip-Bala" target="_blank" rel="noreferrer"><FaGithub className="hover:text-lightturquoise transition" /></a>
           <a href="https://www.linkedin.com/in/dipanwita-bala-21999c/" target="_blank" rel="noreferrer"><FaLinkedin className="hover:text-lightturquoise transition" /></a>
@@ -85,14 +90,15 @@ function Header() {
 function Navbar() {
   return (
     // <nav className="flex md:justify-between items-center text-lg gap-4 mb-6 w-screen fixed">
-      <div className="flex gap-8 justify-between text-md font-semibold fixed bottom-10">
-         <a href="#home" className="hover:text-lightturquoise transition underline">Home</a>
-        <a href="#about" className="hover:text-lightturquoise transition underline">About</a>
-        <a href="#skills" className="hover:text-lightturquoise transition ">Skills</a>
-        <a href="#projects" className="hover:text-lightturquoise transition ">Projects</a>
-        <a href="#contact" className="hover:text-lightturquoise transition ">Contact</a>
-      </div>
+
     // </nav>
+    <div className="flex gap-8 justify-between text-md font-semibold fixed bottom-10">
+      <a href="#home" className="hover:text-lightturquoise transition underline">Home</a>
+      <a href="#about" className="hover:text-lightturquoise transition underline">About</a>
+      <a href="#skills" className="hover:text-lightturquoise transition ">Skills</a>
+      <a href="#projects" className="hover:text-lightturquoise transition ">Projects</a>
+      <a href="#contact" className="hover:text-lightturquoise transition ">Contact</a>
+    </div>
   )
 }
 
@@ -109,45 +115,57 @@ function SkillSet() {
 
 function Projects() {
   return (
-    <div id="projects" className="flex flex-col gap-10">
+    <div id="projects" className="grid grid-cols-2">
       {projects.map((project, index) => (
-        <motion.div 
-          key={index} 
+        <motion.div
+          key={index}
           className="flex flex-col lg:flex-row gap-10 justify-between relative z-10 border-b border-gray-700 pb-10"
-          initial={{ opacity: 0, y: 40 }} 
-          whileInView={{ opacity: 1, y: 0 }} 
-          viewport={{ once: true }} 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <div className="flex flex-col gap-4 hover:bg-darkgray p-4 rounded-xl">
-            <h2 className="text-3xl md:text-4xl font-bold hover:text-lightturquoise transition">{project.title}</h2>
-            <p className="text-sm md:text-base">{project.description}</p>
-            <img src={project.src} alt={project.title} className="rounded-xl shadow-md" />
-          </div>
-          <div className="bg-transindigo/80 flex flex-col p-4 rounded-2xl w-full lg:w-1/2">
-            <h3 className="text-xl font-semibold mb-2">Features</h3>
-            {project.features.map((feature, idx) => (
-              <div key={idx} className="font-light text-base p-2 border-b border-b-transturquoise">
-                <div className="flex gap-2 items-start">
-                  <span className="font-bold text-sm text-transturquoise bg-darkgray px-2 py-1 rounded-full">{idx + 1}</span>
-                  <p>{feature}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <ProjectComp project={project}/>
         </motion.div>
       ))}
     </div>
   )
 }
 
+function ProjectComp({ project }: any) {
+  return (
+    <>
+      <div className="flex flex-col gap-4 hover:bg-darkgray p-4 rounded-xl">
+        {/* <p className="text-sm md:text-base">{project.description}</p> */}
+        <img src={project.src} alt={project.title} className="rounded-xl shadow-md opacity-70 hover:opacity-100" />
+        <h2 className=" hover:text-lightturquoise transition">{project.title}</h2>
+      </div>
+      {/* <div className="bg-transindigo/80 flex flex-col p-4 rounded-2xl w-full lg:w-1/2">
+        <h3 className="text-xl font-semibold mb-2">Features</h3>
+      </div> */}
+    </>
+  )
+}
+// function Features(){
+//   return (
+//     {project.features.map((feature, idx) => (
+//   <div key={idx} className="font-light text-base p-2 border-b border-b-transturquoise">
+//     <div className="flex gap-2 items-start">
+//       <span className="font-bold text-sm text-transturquoise bg-darkgray px-2 py-1 rounded-full">{idx + 1}</span>
+//       <p>{feature}</p>
+//     </div>
+//   </div>
+// ))}
+//   )
+// }
+
 function Contact() {
   return (
-    <motion.div 
-      id="contact" 
+    <motion.div
+      id="contact"
       className="py-20 text-center"
-      initial={{ opacity: 0 }} 
-      whileInView={{ opacity: 1 }} 
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
       <h2 className="text-4xl font-semibold text-lightturquoise mb-4">Contact</h2>

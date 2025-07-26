@@ -1,6 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
+/* @font-face {
+    font-family: "Roboto Condensed" ;
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("/fonts/Roboto_Condensed-Black.ttf") format("truetype");
+
+} */
+ 
+/* .roboto-condensed- {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+   */
+
+
 @theme{
+    --font-roboto: 'Roboto Condensed', serif;
     --color-lightturquoise : #43c9aa;
     --color-transturquoise : #38e8be;
     --color-darkturquoise : #25886c;
