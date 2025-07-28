@@ -25,8 +25,8 @@ export default App
 
 function Hero() {
   return (
-    <div className="py-20">
-      <h1 className="text-[200px] text-offwhite text-roboto font-medium font-stretch-ultra-condensed text-center text-nowrap hover:underline hover:underline-offset-2 decoration-lime">
+    <div className="py-20 w-full h-screen">
+      <h1 className="text-[200px] text-offwhite text-roboto font-medium font-stretch-ultra-condensed text-center text-nowrap underline hover:underline-offset-2 decoration-lime">
         DIPANWITA BALA
       </h1>
       <h2 className="text-[100px] text-offwhite text-roboto font-normal font-stretch-ultra-condensed text-center text-nowrap hover:underline hover:underline-offset-2 decoration-pink-500">FULLSTACK DEVELOPER</h2>
@@ -43,7 +43,7 @@ function About() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      <div className="flex flex-col gap-20">
+      <div className="flex flex-col gap-20 w-full">
         <h1 className="text-[100px] text-offwhite text-roboto font-normal font-stretch-ultra-condensed text-center text-nowrap hover:underline hover:underline-offset-2 decoration-lime  ">
           ABOUT
         </h1>
@@ -68,22 +68,22 @@ function About() {
 
 function Header() {
   return (
-    <motion.div
-      className="flex flex-col md:flex-row items-center gap-8"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-    >
-      <div className="flex items-center justify-between w-full fixed font-roboto">
+    // <motion.div
+    //   className="flex flex-col md:flex-row items-center gap-8"
+    //   initial={{ opacity: 0 }}
+    //   animate={{ opacity: 1 }}
+    //   transition={{ duration: 1 }}
+    // >
+      <div className="flex items-center justify-between fixed font-roboto">
         <h1 className="text-xl font-medium font-sans italic text-lightturquoise">db</h1>
-        <div className="flex items-center justify-end gap-4 ">
-          <a href="https://github.com/Dip-Bala" target="_blank" rel="noreferrer"><FaGithub className="hover:text-lightturquoise transition" /></a>
-          <a href="https://www.linkedin.com/in/dipanwita-bala-21999c/" target="_blank" rel="noreferrer"><FaLinkedin className="hover:text-lightturquoise transition" /></a>
-          <a href="mailto:dipanwita.bala.02@gmail.com"><FaEnvelope className="hover:text-lightturquoise transition" /></a>
-          <a href="/assets/resume.pdf" download className="underline hover:text-lightturquoise">Resume</a>
-        </div>
+        <div className="flex items-center justify-end gap-4 w-5xl">
+          <a href="https://github.com/Dip-Bala" target="_blank" rel="noreferrer"><FaGithub className="hover:text-lightturquoise transition h-5 w-5" /></a>
+          <a href="https://www.linkedin.com/in/dipanwita-bala-21999c/" target="_blank" rel="noreferrer"><FaLinkedin className="hover:text-lightturquoise transition h-5 w-5" /></a>
+          <a href="mailto:dipanwita.bala.02@gmail.com"><FaEnvelope className="hover:text-lightturquoise transition h-5 w-5 " /></a>
+          <a href="/assets/resume.pdf" download className="border border-offwhite/50 rounded-2xl py-1 px-2 hover:bg-offwhite/20 hover:border-offwhite/20 ">Resume</a>
+        </div> 
       </div>
-    </motion.div>
+    // </motion.div>
   )
 }
 
@@ -92,11 +92,20 @@ function Navbar() {
     // <nav className="flex md:justify-between items-center text-lg gap-4 mb-6 w-screen fixed">
 
     // </nav>
-    <div className="flex gap-8 justify-between text-md font-semibold fixed bottom-10">
-      <a href="#home" className="hover:text-lightturquoise transition underline">Home</a>
-      <a href="#about" className="hover:text-lightturquoise transition underline">About</a>
+    <div className="flex  justify-between text-lg font-medium bottom-10 relative">
+
+      <a href="#about"className="w-35 flex gap-10 cursor-pointer absolute top-110 group -rotate-10 left-15 transform hover:scale-110 hover:rotate-5 hover:text-pink-600">
+      <p className="transition absolute -rotate-30 transform hover:scale-110 group-hover:rotate-5">about</p>
+      <img src="/assets/smile.png" />
+      </a>
+
       <a href="#skills" className="hover:text-lightturquoise transition ">Skills</a>
-      <a href="#projects" className="hover:text-lightturquoise transition ">Projects</a>
+
+      <div className="w-35 flex gap-10 cursor-pointer absolute top-25 rotate-10 left-115 transform group hover:scale-110 hover:rotate-5 hover:text-pink-600">
+      <a href="#projects" className="transition absolute -rotate-10 group-hover:-rotate-20">projects</a>
+      <img src="/assets/start-up.png" />
+      </div>
+
       <a href="#contact" className="hover:text-lightturquoise transition ">Contact</a>
     </div>
   )
