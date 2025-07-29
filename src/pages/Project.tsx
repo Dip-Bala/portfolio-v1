@@ -40,25 +40,14 @@ function ProjectComp({ project }: any) {
       <div className="flex flex-col gap-4 hover:bg-darkgray p-4 rounded-xl">
         <img src={project.src} alt={project.title} className="rounded-xl shadow-md opacity-70 hover:opacity-100" />
         <h2 className="font-semibold transition">{project.title}</h2>
+        <p>{project.techstack}</p>
+        <p>{project.description}</p>
+        <a href={project.github}>github repo</a>
+        <a href={project.live} target="_blank">live </a>
       </div>
-      {/* <div className="bg-transindigo/80 flex flex-col p-4 rounded-2xl w-full lg:w-1/2">
-        <h3 className="text-xl font-semibold mb-2">Features</h3>
-      </div> */}
     </>
   )
 }
-// function Features(){
-//   return (
-//     {project.features.map((feature, idx) => (
-//   <div key={idx} className="font-light text-base p-2 border-b border-b-transturquoise">
-//     <div className="flex gap-2 items-start">
-//       <span className="font-bold text-sm text-transturquoise bg-darkgray px-2 py-1 rounded-full">{idx + 1}</span>
-//       <p>{feature}</p>
-//     </div>
-//   </div>
-// ))}
-//   )
-// }
 
 
 
@@ -66,7 +55,7 @@ interface project {
   src: string;
   title: string;
   description: string,
-  features: string[],
+  // features: string[],
   techstack: string, //change this to ReactNode[] later
   live: string;
   github: string;
@@ -78,12 +67,7 @@ const projects: project[] = [
     src: "/assets/mindly-preview.png",
     title: "Mindly",
     description: "Developed a full-stack productivity web application that allows users to store and organize important content links(images, videos, articles, audio) in a centralized knowledge base",
-    features: ["Developed a full-stack productivity web application that allows users to store and organize important content links(images, videos, articles, audio) in a centralized knowledge base.",
-      "Implemented both frontend and backend using TypeScript for enhanced type safety and maintainability. Designed robust Mongoose schemas and enforced strict validation using Zod for request payloads.",
-      "Implemented secure user authentication using JWT.",
-      "Used React Query for server side state management, data fetching and caching.",
-    ],
-    techstack: "",//change this to ReactNode[] later
+    techstack: "MERN | Typescript | TailwindCSS",//change this to ReactNode[] later
     live: "https://www.appmindly.live/",
     github: "https://github.com/Dip-Bala/mindly-frontend",
     date: "June 2025"
@@ -92,12 +76,6 @@ const projects: project[] = [
     src: "/assets/chatroom-preview.png",
     title: "Chat Room",
     description: "",
-    features: ["Developed a full-stack productivity web application that allows users to store and organize important content links(images, videos, articles, audio) in a centralized knowledge base.",
-      "‣ Implemented both frontend and backend using TypeScript for enhanced type safety and maintainability. Designed robust Mongoose schemas and enforced strict validation using Zod for request payloads.",
-      "‣ Implemented secure user authentication using JWT.",
-      "‣ Used React Query for server side state management, data fetching and caching.",
-      "‣ Created a Chrome Extension that lets users save content directly from the browser in just a few clicks.",
-      "‣ Deployed the server application on Render and frontend on Vercel for easy and reliable hosting."],
     techstack: "string", //change this to ReactNode[] later
     live: "chat-room-frontend-chi.vercel.app",
     github: "https://github.com/Dip-Bala/chat-room-frontend",
