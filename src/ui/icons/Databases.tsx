@@ -6,8 +6,6 @@ export default function DataBases() {
       <StackIcon variant="dark" name="mysql" className="w-20 h-20 " />
       <StackIcon variant="dark" name="mongodb" className="w-20 h-20 " />
       <StackIcon variant="dark" name="java" className="w-20 h-20 " />
-      {/* <StackIcon variant="dark" name="postman" className="w-20 h-20 " /> */}
-
     </div>
   );
 }
