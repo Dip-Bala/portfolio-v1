@@ -1,5 +1,4 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
@@ -7,6 +6,7 @@ import { Contact } from "./pages/Contact";
 import { Project } from "./pages/Project";
 import { Skills } from './pages/Skills';
 import { Navbar } from './ui/components/Navbar';
+import Footer from './ui/components/Footer';
 
 function App() {
 
@@ -33,9 +33,10 @@ const MainLayout = () => {
     <div className="bg-darkblack text-offwhite min-h-screen">
       {/* <Header /> */}
       <Navbar />
-      <div className="px-6 md:px-10 lg:px-20 py-10">
+      <div className="px-6 md:px-10 lg:px-20 py-10 text-pink-600">
         <Outlet />
       </div>
+      <Footer />
     </div>
   );
 };

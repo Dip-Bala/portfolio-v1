@@ -4,10 +4,10 @@ import StackIcon from "tech-stack-icons";
 interface IconProps {
   name: string;
   label?: string;
-  size: number;
+  size?: number;
 }
 
-export default function Icon({ name, label, size }: IconProps) {
+export default function Icon({ name, label }: IconProps) {
   return (
     <motion.div
       className="flex flex-col items-center gap-2 text-sm text-offwhite rounded-full p-3 sm:p-4 w-16 h-16 sm:w-20 sm:h-20 backdrop-blur-sm shadow-lg shadow-lime/20 cursor-pointer"

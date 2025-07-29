@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import Icon from "../ui/icons/Icon"; // your existing component
-// import { floatTransition } from "./motionConfig"; // defined below
+import Icon from "../ui/icons/Icon"; 
 
 const icons = [
   { name: "react", label: "React" },
@@ -45,7 +44,7 @@ export function Skills() {
       <h1 className="text-[100px] text-offwhite text-roboto font-bold font-stretch-ultra-condensed text-center text-nowrap underline underline-offset-2 decoration-lime py-10 border-b border-offwhite/20">
         Skill Set
       </h1>
-      <h2 className="text-center">Tools I have learnt throughout my coding journey</h2>
+      <h2 className="text-center text-offwhite/50">Tools I have learnt throughout my coding journey</h2>
     <div className="relative flex justify-center items-center h-[500px] w-full overflow-hidden ">
       <div className="relative w-[100px] h-[100px]  text-center">
         <h2 className="font-bold text-5xl text-lime/50">Stack</h2>
