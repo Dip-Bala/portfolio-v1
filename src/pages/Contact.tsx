@@ -5,7 +5,7 @@ export function Contact() {
   return (
     <motion.div
       id="contact"
-      className="p-10 text-base leading-7 text-offwhite/80"
+      className="sm:p-10 text-base leading-7 text-offwhite/80"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}

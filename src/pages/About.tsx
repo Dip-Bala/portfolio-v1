@@ -5,13 +5,13 @@ export function About() {
   return (
     <motion.div
       id="about"
-      className="p-10 text-lg leading-8 max-w-full"
+      className="sm:p-10 text-lg leading-8 max-w-full"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      <div className="flex flex-col gap-20 p-4">
-        <h1 className="text-[90px] sm:text-[100px] text-offwhite text-roboto font-bold font-stretch-ultra-condensed text-center text-nowrap underline underline-offset-4 decoration-lime border-b border-offwhite/20">
+      <div className="flex flex-col gap-20">
+        <h1 className="text-[60px] sm:text-[100px] text-offwhite text-roboto font-bold font-stretch-ultra-condensed text-center text-nowrap underline underline-offset-4 decoration-lime border-b border-offwhite/20">
           About
         </h1>
 
