@@ -83,8 +83,8 @@ export function Contact() {
 
         <div className="text-center mt-6">
           <a
-            href="/resume.pdf"
-            target="_blank"
+            href="/assets/resume.pdf"
+            download
             className="inline-block mt-4 text-lime font-semibold border border-lime px-4 py-2 rounded hover:bg-lime hover:text-black transition"
           >
             View Résumé
