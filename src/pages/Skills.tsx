@@ -40,8 +40,8 @@ export function Skills() {
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 1 }}
   >
-    <div className="flex flex-col gap-10 sm:p-6">
-      <h1 className="text-[60px] md:text-[100px] text-offwhite text-roboto font-bold font-stretch-ultra-condensed text-center text-nowrap underline underline-offset-2 decoration-lime py-10 border-b border-offwhite/20">
+    <div className="flex flex-col gap-10 ">
+      <h1 className="text-[60px] md:text-[100px] text-offwhite text-roboto font-bold font-stretch-ultra-condensed text-center text-nowrap underline underline-offset-2 decoration-lime  border-b border-offwhite/20">
         Skill Set
       </h1>
       <h2 className="text-center text-offwhite/50">Tools I have learnt throughout my coding journey</h2>
