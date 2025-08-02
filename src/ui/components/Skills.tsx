@@ -23,11 +23,8 @@ const icons = [
 ];
 
 export function Skills() {
-  // Duplicate icons for infinite scroll illusion
-  // const scrollingIcons = [...icons, ...icons];
-
   return (
-    <div className="overflow-hidden whitespace-nowrap w-full py-20 flex flex-col gap-6 ">
+    <div className="overflow-hidden whitespace-nowrap w-full py-20 flex flex-col gap-6 text-offwhite/80">
       <motion.div
         className="flex gap-6"
         animate={{ x: ["0%", "30%"] }}
@@ -40,9 +37,9 @@ export function Skills() {
         {icons.map((icon, index) => (
           <div
             key={index}
-            className="flex px-4 py-2 items-center gap-2 border border-darkgray rounded-full  min-w-fit"
+            className="flex px-4 py-2 items-center gap-2 border border-darkgray rounded-full min-w-fit"
           >
-            <StackIcon name={icon.name} variant="light" className="w-8 h-8 bg-lime-50 " />
+            <StackIcon name={icon.name} variant="light" className="w-4 h-4 bg-lime-50 " />
             <span className="text-text-80 whitespace-nowrap">{icon.label}</span>
           </div>
         ))}
@@ -59,10 +56,10 @@ export function Skills() {
         {icons.map((icon, index) => (
           <div
             key={index}
-            className="flex px-4 py-2 items-center gap-2 border border-darkgray rounded-full  min-w-fit"
+            className="flex px-4 py-2 items-center gap-2 border border-darkgray rounded-full min-w-fit"
           >
-            <StackIcon name={icon.name} variant="light" className="w-8 h-8 bg-lime-50" />
-            <span className="text-offwhite/80 whitespace-nowrap">{icon.label}</span>
+            <StackIcon name={icon.name} variant="light" className="w-2 h-2 sm:w-4 sm:h-4 bg-lime-50" />
+            <span className="whitespace-nowrap">{icon.label}</span>
           </div>
         ))}
       </motion.div>

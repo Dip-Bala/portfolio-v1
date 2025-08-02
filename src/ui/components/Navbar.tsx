@@ -33,7 +33,6 @@ export function Navbar() {
       label: "switch",
       icon: "/assets/switch.svg",
       focusIcon: "/assets/smile-focus.svg",
-      to: "/switch",
       color: "text-orange",
       class: "rotate-5"
     },
@@ -50,15 +49,15 @@ export function Navbar() {
         >
         db
       </h1>
-    <div className="h-0.5 w-full border-t border-translime/10 absolute top-22 right-0"></div>
-      <div className="flex gap-6 md:gap-10 mt-4 md:mt-0 flex-wrap justify-center relative top-10">
+    <div className="h-0.5 w-full border-t border-translime/10 absolute top-16 md:top-22 right-0"></div>
+      <div className="flex gap-6 md:gap-10 mt-4 md:mt-0 flex-wrap justify-center relative md:top-10">
         {navItems.map((item) => (
           <div
             key={item.label}
             className={`flex flex-col items-center gap-2 cursor-pointer transform text-offwhite transition hover:scale-110 ${item.class} ${item.label === isItem? "hover:text-pink text-pink " : " hover:text-lime" }`}
             onClick={() => { setIsItem(item.label); navigate(item.to)}}
           >
-            <img src={item.label === isItem? item.focusIcon : item.icon} alt={item.label} className="w-15 h-15 object-contain" />
+            <img src={item.label === isItem? item.focusIcon : item.icon} alt={item.label} className="w-12 h-12 sm:w-15 sm:h-15 object-contain" />
             <p className="text-md font-semibold ">{item.label}</p>
           </div>
         ))}

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaDownload } from "react-icons/fa";
+
 
 export function About() {
   return (
@@ -20,14 +20,21 @@ export function About() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20 text-offwhite/80">
           <div className="">
             <img
-              src="/assets/profile1.jpeg"
+              src="/assets/profile2.jpeg"
               alt="Dipanwita Bala"
-              className="w-[280px]  md:w-[340px] rounded-full "
+              className="w-xs aspect-square rounded-3xl grayscale shadow-2xl shadow-lime/60"
             />
           </div>
 
           <div className="w-full md:w-[70%] text-justify">
-            <p>
+            <p className="text-sm sm:text-base leading-relaxed text-offwhite max-w-prose mx-auto px-2 text-justify">
+              Hi, I’m <span className="text-lime">Dipanwita</span> — a fullstack developer crafting sleek, minimal, and purposeful websites with a sharp focus on user experience. I overthink every detail on the screen so the user never has to. <br></br>
+              I recently graduated with a B.Tech in ECE-AI and am actively seeking full-time opportunities where I can contribute meaningfully as a developer.<br></br>
+               Right now, I’m building <a href="https://www.appmindly.live" className="italic text-pink-400 cursor-pointer ">Mindly</a> — a web app designed to organize all those scattered, important links we save and forget.<br></br>
+                Design pulls me in now and then, but the backend feels less frustating. A few extras? I live for spontaneous plans that somehow turn out amazing. You’ll occasionally catch me painting or dancing on a whim. Whatever I create — I put my full intention, love, and relentless dedication.
+            </p>
+
+            {/* <p>
               Hi, I'm Dipanwita — a fullstack Dev, building 
               sleek, minimal, and functional websites for people with a purpose of great user experience. 
               I overthink everything I put on the screen so the user doesn't have to overthink it.
@@ -50,19 +57,23 @@ export function About() {
               <strong>A few extras: </strong>I love spontaneous plans that somehow turn out
               amazing. You'll occasionally find me painting or dancing on a whim.
               Whatever I create, I build it with intention, love, and dedication.
-            </p>
+            </p> */}
           </div>
         </div>
 
-        <div className="flex justify-center">
-          <a
-            href="/assets/resume.pdf"
-           download
-            className="inline-flex items-center gap-2 px-5 py-3 border border-offwhite/20 rounded-lg hover:bg-pink-500 transition-colors duration-300 text-offwhite/80 "
-          >
-            <FaDownload />
-            Download Resume
-          </a>
+        <div className="  text-cyan-400 text-center font-semibold text-xl">
+         <h2 className="py-6">Some of my Artwork</h2>
+         <div className="flex gap-8 overflow-x-auto whitespace-nowrap">
+          <img src="/assets/art1.jpeg" className="w-60"/>
+          <img src="/assets/art1.jpeg" className="w-60"/>
+          <img src="/assets/art1.jpeg" className="w-60"/>
+          <img src="/assets/art1.jpeg" className="w-60"/>
+          <img src="/assets/art1.jpeg" className="w-60"/>
+          <img src="/assets/art1.jpeg" className="w-60"/>
+         </div>
+        </div>
+        <div>
+          I am a Shinobi at heart but mundane by Birth
         </div>
       </div>
     </motion.div>

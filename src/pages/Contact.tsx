@@ -66,7 +66,7 @@ export function Contact() {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/dipanwita-bala"
+            href="https://www.linkedin.com/in/dipanwita-bala-21999c/"
             target="_blank"
             rel="noreferrer"
             className="hover:text-lime transition"
@@ -74,8 +74,10 @@ export function Contact() {
             <FaLinkedin />
           </a>
           <a
-            href="mailto:dipanwita.bala@example.com"
+            href="mailto:dipanwita.bala.02@gmail.com"
             className="hover:text-lime transition"
+            target="_blank"
+            rel="noreferrer"
           >
             <FaEnvelope />
           </a>
