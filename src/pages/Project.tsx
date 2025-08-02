@@ -11,9 +11,10 @@ export function Project() {
       transition={{ duration: 1 }}
     >
       <div className="flex flex-col gap-20">
-        <h1 className="text-4xl sm:text-[100px] border-b border-offwhite/10 text-offwhite text-roboto font-bold font-stretch-ultra-condensed text-center text-nowrap hover:underline underline-offset-2 decoration-lime">
+        {/* <h1 className="text-4xl sm:text-[100px] border-b border-offwhite/10 text-offwhite text-roboto font-bold font-stretch-ultra-condensed text-center text-nowrap hover:underline underline-offset-2 decoration-lime">
           Projects
-        </h1>
+        </h1> */}
+        {/* <h2>Some of my work</h2> */}
         <div id="projects" className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <motion.a
