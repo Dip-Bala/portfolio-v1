@@ -55,7 +55,11 @@ export function Navbar() {
           <div
             key={item.label}
             className={`flex flex-col items-center gap-2 cursor-pointer transform text-offwhite transition hover:scale-110 ${item.class} ${item.label === isItem? "hover:text-pink text-pink " : " hover:text-lime" }`}
-            onClick={() => { setIsItem(item.label); navigate(item.to)}}
+            onClick={() => { 
+              setIsItem(item.label);
+              if(item.to){
+                navigate(item.to)}}
+              }
           >
             <img src={item.label === isItem? item.focusIcon : item.icon} alt={item.label} className="w-12 h-12 sm:w-15 sm:h-15 object-contain" />
             <p className="text-md font-semibold ">{item.label}</p>
