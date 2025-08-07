@@ -8,7 +8,7 @@ export function Navbar() {
     {
       label: "about",
       icon: "/assets/smile.svg",
-      focusIcon: "/assets/smile-focus.svg",
+      focusIcon: "/assets/smiley-focus.svg",
       to: "/about",
       color: "text-pink",
       class: "-rotate-10"
@@ -16,7 +16,7 @@ export function Navbar() {
     {
       label: "projects",
       icon: "/assets/laptop.svg",
-      focusIcon: "/assets/smile-focus.svg",
+      focusIcon: "/assets/laptop-.svg",
       to: "/projects",
       color: "text-lime",
       class: "rotate-5"
@@ -24,15 +24,15 @@ export function Navbar() {
     {
       label: "contact",
       icon: "/assets/plane.svg",
-      focusIcon: "/assets/smile-focus.svg",
+      focusIcon: "/assets/plane-focus.svg",
       to: "/contact",
       color: "text-orange",
-      class: "-rotate-5"
+      class: "-rotate-5 "
     },
     {
       label: "switch",
-      icon: "/assets/switch.svg",
-      focusIcon: "/assets/smile-focus.svg",
+      icon: "/assets/switch-off.svg",
+      focusIcon: "/assets/switch-on.svg",
       color: "text-orange",
       class: "rotate-5"
     },
@@ -50,11 +50,11 @@ export function Navbar() {
         db
       </h1>
     <div className="h-0.5 w-full border-t border-translime/10 absolute top-16 md:top-22 right-0"></div>
-      <div className="flex gap-6 md:gap-10 mt-4 md:mt-0 flex-wrap justify-center relative md:top-10">
+      <div className="flex gap-6 md:gap-10 mt-4 md:mt-0 flex-wrap justify-center relative md:top-10 ">
         {navItems.map((item) => (
           <div
             key={item.label}
-            className={`flex flex-col items-center gap-2 cursor-pointer transform text-offwhite transition hover:scale-110 ${item.class} ${item.label === isItem? "hover:text-pink text-pink " : " hover:text-lime" }`}
+            className={`flex flex-col items-center gap-2 cursor-pointer transform text-offwhite transition hover:scale-110 ${item.class} ${item.label === isItem? "text-pink scale-110" : " hover:text-lime" }`}
             onClick={() => { 
               setIsItem(item.label);
               if(item.to){
