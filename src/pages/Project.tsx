@@ -11,11 +11,9 @@ export function Project() {
       transition={{ duration: 1 }}
     >
       <div className="flex flex-col gap-20">
-        <div id="projects" className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div id="projects" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <motion.a
-              href={project.live}
-              target="_blank"
+            <motion.div
               key={index}
               className="transform hover:scale-[1.02] transition duration-300"
               initial={{ opacity: 0, y: 40 }}
@@ -24,7 +22,7 @@ export function Project() {
               transition={{ duration: 0.5 }}
             >
               <ProjectComp project={project} />
-            </motion.a>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -35,12 +33,18 @@ export function Project() {
 function ProjectComp({ project }: { project: project }) {
   return (
     <div className="flex flex-col gap-4 hover:bg-darkgray p-4 rounded-xl shadow-md transition-all h-full">
+      <a
+      href={project.live}
+      target="_blank"
+      >
       <img
         src={project.src}
         alt={project.title}
         className="rounded-xl shadow-sm opacity-70 hover:opacity-100 transition"
       />
+      </a>
       <h2 className="font-semibold text-offwhite">{project.title}</h2>
+      <p className="text-xs text-pink-100/80">{project.date}</p>
       <p className="text-offwhite/50 text-sm">{project.description}</p>
 
       <div className="flex flex-wrap gap-2 text-sm">
@@ -87,11 +91,21 @@ interface project {
 
 const projects: project[] = [
   {
+    src: "/assets/photo-drive-preview.png",
+    title: "Photo-Drive",
+    description:
+      "A secure cloud-based photo storage app with seamless uploads, JWT auth, and a clean UI.",
+    techstack: ["React", "Node.js", "TypeScript", "Cloudinary", "TailwindCSS", "MongoDB", "Express"],
+    live: "https://photo-drive-frontend.vercel.app/",
+    github: "https://github.com/Dip-Bala/photo-drive-frontend",
+    date: "August 2025",
+  },
+  {
     src: "/assets/mindly-preview.png",
     title: "Mindly",
     description:
       "A productivity web app to save and organize links (images, videos, articles, audio) into a centralized second brain.",
-    techstack: ["MongoDB", "Express", "React", "Node.js", "TypeScript", "TailwindCSS"],
+    techstack: ["React", "Node.js", "TypeScript", "TailwindCSS", "MongoDB", "Express"],
     live: "https://www.appmindly.live/",
     github: "https://github.com/Dip-Bala/mindly-frontend",
     date: "June 2025",
@@ -105,5 +119,7 @@ const projects: project[] = [
     live: "https://chat-room-frontend-chi.vercel.app",
     github: "https://github.com/Dip-Bala/chat-room-frontend",
     date: "July 2025",
-  },
+  }
+  
+
 ];

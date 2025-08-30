@@ -15,7 +15,7 @@ export function About() {
 
           <motion.div
             id="about-image"
-            className=""
+            className="drop-shadow-amber-100 drop-shadow-md"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 10 }}
             transition={{ duration: 1 }}
@@ -23,7 +23,7 @@ export function About() {
             <img
               src="/assets/about.png"
               alt="Dipanwita Bala"
-              className="w-sm aspect-square rounded-full drop-shadow-sm drop-shadow-pink-800"
+              className="w-sm aspect-square rounded-full drop-shadow-md drop-shadow-lime-300"
             />
           </motion.div>
           <motion.div
@@ -33,12 +33,13 @@ export function About() {
             animate={{ opacity: 1, x: 10 }}
             transition={{ duration: 1 }}
           >
-            <p className="text-sm sm:text-base leading-relaxed text-offwhite/80 max-w-prose mx-auto px-2 text-justify">
-              Hi, I’m Dipanwita — a fullstack developer crafting sleek, minimal, and purposeful websites for users. I overthink every detail on the screen so the user never has to. <br></br>
-              I recently graduated with a B.Tech in ECE-AI and am actively seeking full-time opportunities where I can contribute meaningfully as a developer.<br></br>
-              Right now, I’m building <a href="https://www.appmindly.live" className="font-semibold text-pink cursor-pointer ">Mindly</a> — a web app designed to organize all those scattered, important links we save and forget.<br></br>
-              Design pulls me in now and then, but the backend feels less frustating. A few extras? I live for spontaneous plans that somehow turn out amazing. You’ll occasionally catch me painting or dancing on a whim. Whatever I create — I put my full intention, love, and relentless dedication.
-            </p>
+            <p className="text-sm sm:text-base leading-8 text-offwhite/70 max-w-prose mx-auto px-2 text-justify text-pretty">
+  Hi, I’m Dipanwita — a fullstack developer crafting sleek, minimal, and purposeful websites. I obsess over the little details so the user never has to.<br></br>
+  I recently graduated with a B.Tech in ECE-AI and am now seeking full-time opportunities where I can grow and contribute as a developer.<br></br>
+  Currently, I’m building <a href="https://www.appmindly.live" className="font-semibold text-pink-400 cursor-pointer after:content-['_↗']">Mindly</a> — a web app to organize all those scattered, important links we save and forget.<br></br>
+  Beyond code, I thrive on spontaneous plans that somehow turn out amazing. Sometimes you’ll find me painting, sometimes dancing — but always creating with intention, love, and relentless dedication.
+</p>
+
           </motion.div>
         </div>
 
