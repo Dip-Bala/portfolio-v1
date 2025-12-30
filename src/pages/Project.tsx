@@ -91,16 +91,6 @@ interface project {
 
 const projects: project[] = [
   {
-    src: "/assets/photo-drive-preview.png",
-    title: "Photo-Drive",
-    description:
-      "A secure cloud-based photo storage app with seamless uploads, JWT auth, and a clean UI.",
-    techstack: ["React", "Node.js", "TypeScript", "Cloudinary", "TailwindCSS", "MongoDB", "Express"],
-    live: "https://photo-drive-frontend.vercel.app/",
-    github: "https://github.com/Dip-Bala/photo-drive-frontend",
-    date: "August 2025",
-  },
-  {
     src: "/assets/mindly-preview.png",
     title: "Mindly",
     description:
@@ -109,32 +99,6 @@ const projects: project[] = [
     live: "https://www.appmindly.live/",
     github: "https://github.com/Dip-Bala/mindly-frontend",
     date: "June 2025",
-  },
-  {
-    src: "/assets/chatroom-preview.png",
-    title: "Chat Room",
-    description:
-      "A real-time group chat app with WebSocket support and simple clean UI.",
-    techstack: ["React", "Node.js", "Socket.IO", "TailwindCSS"],
-    live: "https://chat-room-frontend-chi.vercel.app",
-    github: "https://github.com/Dip-Bala/chat-room-frontend",
-    date: "July 2025",
-  },{
-    src: "/assets/flowboard-preview.png",
-    title: "Flowboard",
-    description:
-      "A visual productivity and idea-mapping tool designed to organize thoughts, tasks, and workflows in an intuitive board-style interface.",
-    techstack: [
-      "React",
-      "TypeScript",
-      "TailwindCSS",
-      "Node.js",
-      "Express",
-      "MongoDB",
-    ],
-    live: "https://flowboard.vercel.app", 
-    github: "https://github.com/Dip-Bala/flowboard",
-    date: "September 2025",
   },
   {
     src: "/assets/f1-insight-preview.png",
@@ -149,9 +113,46 @@ const projects: project[] = [
       "Google Gemini",
       "TailwindCSS",
     ],
-    live: "https://f1-insight.vercel.app",
-    github: "https://github.com/Dip-Bala/f1-insight",
-    date: "October 2025",
+    live: "https://flow-board-uiyi.vercel.app",
+    github: "https://github.com/Dip-Bala/formula1_chatbot",
+    date: "December 2025",
+  },
+  {
+    src: "/assets/flowboard-preview.png",
+    title: "Flowboard",
+    description:
+      "A visual productivity and idea-mapping tool designed to organize thoughts, tasks, and workflows in an intuitive board-style interface.",
+    techstack: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+    ],
+    live: "https://flow-board-w3kw.vercel.app", 
+    github: "https://github.com/Dip-Bala/flow_board",
+    date: "December 2025",
+  },
+  {
+    src: "/assets/photo-drive-preview.png",
+    title: "Photo-Drive",
+    description:
+      "A secure cloud-based photo storage app with seamless uploads, JWT auth, and a clean UI.",
+    techstack: ["React", "Node.js", "TypeScript", "Cloudinary", "TailwindCSS", "MongoDB", "Express"],
+    live: "https://photo-drive-frontend.vercel.app/",
+    github: "https://github.com/Dip-Bala/photo-drive-frontend",
+    date: "August 2025",
+  },
+  {
+    src: "/assets/chatroom-preview.png",
+    title: "Chat Room",
+    description:
+      "A real-time group chat app with WebSocket support and simple clean UI.",
+    techstack: ["React", "Node.js", "Socket.IO", "TailwindCSS"],
+    live: "https://chat-room-frontend-chi.vercel.app",
+    github: "https://github.com/Dip-Bala/chat-room-frontend",
+    date: "July 2025",
   },
   
 
