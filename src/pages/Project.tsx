@@ -119,7 +119,40 @@ const projects: project[] = [
     live: "https://chat-room-frontend-chi.vercel.app",
     github: "https://github.com/Dip-Bala/chat-room-frontend",
     date: "July 2025",
-  }
+  },{
+    src: "/assets/flowboard-preview.png",
+    title: "Flowboard",
+    description:
+      "A visual productivity and idea-mapping tool designed to organize thoughts, tasks, and workflows in an intuitive board-style interface.",
+    techstack: [
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+    ],
+    live: "https://flowboard.vercel.app", 
+    github: "https://github.com/Dip-Bala/flowboard",
+    date: "September 2025",
+  },
+  {
+    src: "/assets/f1-insight-preview.png",
+    title: "F1 Insight",
+    description:
+      "An AI-powered Formula 1 knowledge assistant using RAG, vector search, and real-time data ingestion to answer F1-related queries accurately.",
+    techstack: [
+      "Next.js",
+      "TypeScript",
+      "Pinecone",
+      "LangChain",
+      "Google Gemini",
+      "TailwindCSS",
+    ],
+    live: "https://f1-insight.vercel.app",
+    github: "https://github.com/Dip-Bala/f1-insight",
+    date: "October 2025",
+  },
   
 
 ];
