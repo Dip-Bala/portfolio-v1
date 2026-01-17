@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import StackIcon from "tech-stack-icons";
 
 const icons = [
-  { name: "react", label: "React" },
+  {name: "nextjs", label: "NextJs"},
+  { name: "react", label: "ReactJs" },
   { name: "js", label: "JavaScript" },
   { name: "java", label: "Java" },
   { name: "typescript", label: "TypeScript" },
@@ -21,6 +22,8 @@ const icons = [
   { name: "reactquery", label: "React-Query" },
   { name: "digitalocean", label: "DigitalOcean" },
 ];
+
+
 
 export function Skills() {
   return (

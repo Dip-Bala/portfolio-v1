@@ -91,15 +91,23 @@ interface project {
 
 const projects: project[] = [
   {
-    src: "/assets/mindly-preview.png",
-    title: "Mindly",
-    description:
-      "A productivity web app to save and organize links (images, videos, articles, audio) into a centralized second brain.",
-    techstack: ["React", "Node.js", "TypeScript", "TailwindCSS", "MongoDB", "Express"],
-    live: "https://www.appmindly.live/",
-    github: "https://github.com/Dip-Bala/mindly-frontend",
-    date: "June 2025",
-  },
+  src: "/assets/memoir-preview.png",
+  title: "Memoir",
+  description:
+    "A full-stack personal knowledge management platform (v1 of Mindly) rebuilt with Next.js to save, organize, and browse links, videos, tweets, PDFs, and images. Designed with scalability, clean architecture, and future AI capabilities in mind.",
+  techstack: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "NextAuth",
+    "MongoDB",
+    "Cloudinary",
+    "TailwindCSS",
+  ],
+  live: "https://memoir-lake-seven.vercel.app", // update if different
+  github: "https://github.com/Dip-Bala/memoir", // update if needed
+  date: "January 2026 – Present",
+},
   {
     src: "/assets/f1-insight-preview.png",
     title: "F1 Insight",
@@ -113,9 +121,20 @@ const projects: project[] = [
       "Google Gemini",
       "TailwindCSS",
     ],
-    live: "https://flow-board-uiyi.vercel.app",
+    live: "https://f1-bot.vercel.app",
     github: "https://github.com/Dip-Bala/formula1_chatbot",
     date: "December 2025",
+  },
+
+  {
+    src: "/assets/mindly-preview.png",
+    title: "Mindly",
+    description:
+  "The initial (v0) version of a productivity web app to save and organize links, images, videos, articles, and audio into a centralized second brain. Later evolved into Memoir using Next.js.",
+    techstack: ["React", "Node.js", "TypeScript", "TailwindCSS", "MongoDB", "Express"],
+    live: "https://www.appmindly.live/",
+    github: "https://github.com/Dip-Bala/mindly-frontend",
+    date: "June 2025",
   },
   {
     src: "/assets/flowboard-preview.png",
@@ -130,7 +149,7 @@ const projects: project[] = [
       "Express",
       "MongoDB",
     ],
-    live: "https://flow-board-w3kw.vercel.app", 
+    live: "https://f1-bot.vercel.app", 
     github: "https://github.com/Dip-Bala/flow_board",
     date: "December 2025",
   },
