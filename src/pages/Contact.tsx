@@ -97,7 +97,6 @@
 //   );
 // }
 
-
 import { motion } from "framer-motion";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -110,52 +109,53 @@ export function Contact() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-        <h1 className="text-4xl text-center font-semibold font-stretch-ultra-condensed text-offwhite mb-10 hover:underline decoration-lime underline-offset-4 pt-10">
-            Let's talk.
-        </h1>
+      {/* <h1 className="text-4xl text-center font-semibold font-stretch-ultra-condensed text-offwhite mb-10 hover:underline decoration-lime underline-offset-4 pt-10">
+        Let's talk.
+      </h1> */}
 
-        <p className="text-center mb-8 text-offwhite/70">
-        I am just one text message away. 
-        </p>
+      <p className="text-center mb-8 text-offwhite/70">
+        I’m always eager to connect with fellow developers and designers — to
+        share knowledge, creative ideas, or just hang out. Feel free to reach
+        out if you'd like to collaborate or need my help. I am just one text
+        message away.
+      </p>
 
-      
+      <div className="flex justify-center gap-6 mt-10 text-2xl text-offwhite/70">
+        <a
+          href="https://github.com/Dip-Bala"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:text-lime transition"
+        >
+          <FaGithub />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/dipanwita-bala-21999c/"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:text-lime transition"
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          href="mailto:dipanwita.bala.02@gmail.com"
+          className="hover:text-lime transition"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaEnvelope />
+        </a>
+      </div>
 
-        <div className="flex justify-center gap-6 mt-10 text-2xl text-offwhite/70">
-          <a
-            href="https://github.com/Dip-Bala"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-lime transition"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/dipanwita-bala-21999c/"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-lime transition"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            href="mailto:dipanwita.bala.02@gmail.com"
-            className="hover:text-lime transition"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaEnvelope />
-          </a>
-        </div>
-
-        <div className="text-center mt-6">
-          <a
-            href="/assets/resume.pdf"
-            download
-            className="inline-block mt-4 text-lime font-semibold border border-lime px-4 py-2 rounded hover:bg-lime hover:text-black transition"
-          >
-            View Résumé
-          </a>
-        </div>
+      <div className="text-center mt-6">
+        <a
+          href="/assets/resume.pdf"
+          download
+          className="inline-block mt-4 text-lime font-semibold border border-lime px-4 py-2 rounded hover:bg-lime hover:text-black transition"
+        >
+          View Résumé
+        </a>
+      </div>
     </motion.div>
   );
 }

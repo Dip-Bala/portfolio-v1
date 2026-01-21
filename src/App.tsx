@@ -33,10 +33,9 @@ const MainLayout = () => {
     <div className="bg-darkblack text-offwhite min-h-screen">
       {/* <Header /> */}
       <Navbar />
-      <div className="px-6 md:px-10 lg:px-20 py-10 text-pink-600">
+      <div className="px-6 md:px-10 lg:px-20 ">
         <Outlet />
       </div>
-      <Footer />
     </div>
   );
 };

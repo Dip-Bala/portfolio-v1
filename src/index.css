@@ -4,6 +4,7 @@
 
 @theme{
     --font-roboto: 'Roboto Condensed', serif;
+    --text-shadow-xl: -2px 10px 2px;
     --color-lightturquoise : #43c9aa;
     --color-transturquoise : #38e8be;
     --color-darkturquoise : #25886c;
@@ -18,4 +19,9 @@
     /* --color-orange : #fe3d00; */
     /* --color-transorange : #e83902; */
     --color-darkgray : #313131;
+}
+
+
+body {
+  background-color: var(--color-darkblack)
 }

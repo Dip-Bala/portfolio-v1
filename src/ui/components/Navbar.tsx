@@ -29,13 +29,13 @@ export function Navbar() {
       color: "text-orange",
       class: "-rotate-5 "
     },
-    {
-      label: "switch",
-      icon: "/assets/switch-off.svg",
-      focusIcon: "/assets/switch-on.svg",
-      color: "text-orange",
-      class: "rotate-5"
-    },
+    // {
+    //   label: "switch",
+    //   icon: "/assets/switch-off.svg",
+    //   focusIcon: "/assets/switch-on.svg",
+    //   color: "text-orange",
+    //   class: "rotate-5"
+    // },
   ];
 
   return (
