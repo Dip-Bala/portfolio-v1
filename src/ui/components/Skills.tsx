@@ -20,7 +20,6 @@ const icons = [
   { name: "bootstrap4", label: "Bootstrap" },
   { name: "jquery", label: "JQuery" },
   { name: "reactquery", label: "React-Query" },
-  { name: "digitalocean", label: "DigitalOcean" },
 ];
 
 
@@ -42,7 +41,7 @@ export function Skills() {
             key={index}
             className="flex px-4 py-2 items-center gap-2 border border-darkgray rounded-full min-w-fit"
           >
-            <StackIcon name={icon.name} variant="light" className="w-4 h-4 bg-lime-50 " />
+            <StackIcon name={icon.name} variant="dark" className="w-4 h-4  " />
             <span className="text-text-80 whitespace-nowrap">{icon.label}</span>
           </div>
         ))}
@@ -61,7 +60,7 @@ export function Skills() {
             key={index}
             className="flex px-4 py-2 items-center gap-2 border border-darkgray rounded-full min-w-fit"
           >
-            <StackIcon name={icon.name} variant="light" className="w-2 h-2 sm:w-4 sm:h-4 bg-lime-50" />
+            <StackIcon name={icon.name} variant="dark" className="w-2 h-2 sm:w-4 sm:h-4 " />
             <span className="whitespace-nowrap">{icon.label}</span>
           </div>
         ))}

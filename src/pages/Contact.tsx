@@ -99,12 +99,13 @@
 
 import { motion } from "framer-motion";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 export function Contact() {
   return (
     <motion.div
       id="contact"
-      className="sm:p-10 text-base leading-7 text-offwhite/80"
+      className="p-10 sm:p-20 text-base leading-7 text-offwhite/80"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
@@ -113,21 +114,20 @@ export function Contact() {
         Let's talk.
       </h1> */}
 
-      <p className="text-center mb-8 text-offwhite/70">
+      <p className="text-4xl leading-16 tracking-10 text-center mb-8 text-offwhite/70 hover:text-offwhite">
         I’m always eager to connect with fellow developers and designers — to
-        share knowledge, creative ideas, or just hang out. Feel free to reach
-        out if you'd like to collaborate or need my help. I am just one text
-        message away.
+        share knowledge, creative ideas. Feel free to reach
+        out if you'd like to collaborate or need my help. 
       </p>
 
-      <div className="flex justify-center gap-6 mt-10 text-2xl text-offwhite/70">
+      <div className="flex justify-center gap-6 mt-10 text-2xl text-offwhite">
         <a
           href="https://github.com/Dip-Bala"
           target="_blank"
           rel="noreferrer"
           className="hover:text-lime transition"
         >
-          <FaGithub />
+          <FaGithub size={30}/>
         </a>
         <a
           href="https://www.linkedin.com/in/dipanwita-bala-21999c/"
@@ -135,7 +135,7 @@ export function Contact() {
           rel="noreferrer"
           className="hover:text-lime transition"
         >
-          <FaLinkedin />
+          <FaLinkedin size={30}/>
         </a>
         <a
           href="mailto:dipanwita.bala.02@gmail.com"
@@ -143,17 +143,17 @@ export function Contact() {
           target="_blank"
           rel="noreferrer"
         >
-          <FaEnvelope />
+          <FaEnvelope size={30}/>
         </a>
       </div>
 
-      <div className="text-center mt-6">
+      <div className="text-center mt-10">
         <a
           href="/assets/resume.pdf"
           download
-          className="inline-block mt-4 text-lime font-semibold border border-lime px-4 py-2 rounded hover:bg-lime hover:text-black transition"
+          className="flex items-center justify-center gap-2 mt-4 text-xl text-lime font-semibold px-4 py-2 rounded hover:bg-lime hover:text-black transition"
         >
-          View Résumé
+          Resume <FaArrowUpRightFromSquare size={16} />
         </a>
       </div>
     </motion.div>
