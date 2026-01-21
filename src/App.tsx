@@ -6,7 +6,6 @@ import { Contact } from "./pages/Contact";
 import { Project } from "./pages/Project";
 import { Skills } from './ui/components/Skills';
 import { Navbar } from './ui/components/Navbar';
-import Footer from './ui/components/Footer';
 
 function App() {
 
