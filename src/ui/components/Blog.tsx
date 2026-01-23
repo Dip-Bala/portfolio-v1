@@ -4,8 +4,8 @@ type BlogProps = {
 export default function Blog({ blog }: BlogProps) {
   const platformLogo =
     blog.platform === "Medium"
-      ? "/public/assets/Medium-Icon-White.svg"
-      : "/public/assets/dev-badge.svg";
+      ? "/assets/Medium-Icon-White.svg"
+      : "/assets/dev-badge.svg";
   return (
     <a
       href={blog.href}
