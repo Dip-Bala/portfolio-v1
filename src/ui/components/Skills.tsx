@@ -65,6 +65,9 @@ export function Skills() {
           </div>
         ))}
       </motion.div>
+      <div className="bg-dot-grid w-full h-16">
+
+      </div>
     </div>
   );
 }

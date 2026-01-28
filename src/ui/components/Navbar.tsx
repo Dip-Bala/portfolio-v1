@@ -50,7 +50,7 @@ export function Navbar() {
         db
       </h1>
     <div className="h-0.5 w-full border-t border-translime/10 absolute top-16 md:top-22 right-0"></div>
-      <div className="flex gap-6 md:gap-10 mt-4 md:mt-0 flex-wrap justify-center relative md:top-10 ">
+      <div className="flex gap-6 md:gap-10 mt-4 md:mt-0 flex-wrap justify-center relative md:top-10 -top-4">
         {navItems.map((item) => (
           <div
             key={item.label}

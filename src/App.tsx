@@ -29,10 +29,10 @@ export default App
 
 const MainLayout = () => {
   return (
-    <div className="bg-darkblack text-offwhite min-h-screen">
+    <div className="h-screen bg-darkblack text-offwhite min-h-screen">
       {/* <Header /> */}
       <Navbar />
-      <div className="px-6 md:px-10 lg:px-20 ">
+      <div className=" md:px-10 lg:px-20 ">
         <Outlet />
       </div>
     </div>
